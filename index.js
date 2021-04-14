@@ -15,7 +15,7 @@ inquirer.prompt([
     {
       type: 'input',
       message: 'Instructions to install',
-      name: 'instructions',
+      name: 'installation',
     },
     
     {
@@ -25,7 +25,7 @@ inquirer.prompt([
       },
       {
         type: 'input',
-        message: 'Who contributed to your project?',
+        message: 'How to contribute to your project?',
         name: 'contributing',
       },
       {
@@ -37,6 +37,7 @@ inquirer.prompt([
       {
         type: 'checkbox',
         message: 'Choose a license',
+        name: 'license'
         choices: ["Apache License 2.0", "MIT", "ISC", "GNU"],
       },
 
@@ -53,3 +54,48 @@ inquirer.prompt([
       },
     
   ])
+  .then ((response) => {
+    console.log(response);
+
+    var title = response.title;
+    var description = response.description;
+    var installation = response.installation;
+    var usage  = response.usage;
+    var contributing = response.contributing;
+    var license = response.license;
+    var email = response.email;
+    var github  = response.github;
+    var readme = `# ${title}
+
+    ## Table of contents
+    1. [ Description ](#desc)
+    2. [ Installation ](#installation)
+    3. [ Usage ](#usage)
+    4. [ Contributing ](#contributing)
+    5. [ License ](#license)
+    
+    <a name="descriptipn"></a>
+    ## Description
+    ${description}
+    
+    <a name="installation"></a>
+    ## Installation
+    ${installation}
+    
+    <a name="usage"></a>
+    ## Usage
+    ${usage}
+    
+    <a name="contributing"></a>
+    ## Contributing
+    ${contributing}
+    
+    <a name="license"></a>
+    ## License
+    ${license}
+    
+    <a name="contact"></a>
+    ## Contact
+    Feel free to check out my [GitHub](${github}) repository. Also feel free to send me an email at ${email} if you have any questions..`
+
+})
