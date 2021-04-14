@@ -37,7 +37,7 @@ inquirer.prompt([
       {
         type: 'checkbox',
         message: 'Choose a license',
-        name: 'license'
+        name: 'license',
         choices: ["Apache License 2.0", "MIT", "ISC", "GNU"],
       },
 
