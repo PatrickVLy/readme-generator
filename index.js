@@ -96,6 +96,11 @@ inquirer.prompt([
     
     <a name="contact"></a>
     ## Contact
-    Feel free to check out my [GitHub](${github}) repository. Also feel free to send me an email at ${email} if you have any questions..`
+    Feel free to check out my [GitHub](${github}) repository. Also feel free to send me an email at ${email} if you have any questions..`;
+    fs.writeFile('README.MD', readme , (err) => 
+    err ? console.error(err) : console.log('success')
+    
+    );
+
 
 })
