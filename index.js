@@ -33,14 +33,18 @@ inquirer.prompt([
         message: 'How to test your project?',
         name: 'test',
       },
-
-      {
-        type: 'checkbox',
+   
+     {
+        type: 'list',
         message: 'Choose a license',
         name: 'license',
-        choices: ["Apache License 2.0", "MIT", "ISC", "GNU"],
+        choices: ["Apache", "MIT", "ISC", "GNU"],
       },
-
+      {
+        type: 'input',
+        message: 'include a screenshot link',
+        name: 'screenshot',
+      },
       {
         type: 'input',
         message: 'whats your email address?',
@@ -63,40 +67,53 @@ inquirer.prompt([
     var usage  = response.usage;
     var contributing = response.contributing;
     var license = response.license;
+    let licenseBadge;
+    if (license==="Apache"){licenseBadge=`[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`};
+    if (license==="MIT"){licenseBadge=`[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`};
+    if (license==="ISC"){licenseBadge=`[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`};
+    if (license==="GNU"){licenseBadge=`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`};
+    var screenShot = response.screenshot;
+    let screenShotlink=`![Screenshot](${screenShot})`
     var email = response.email;
     var github  = response.github;
-    var readme = `# ${title}
+    var readme = `
+# ${title}
+${licenseBadge}
 
-    ## Table of contents
-    1. [ Description ](#desc)
-    2. [ Installation ](#installation)
-    3. [ Usage ](#usage)
-    4. [ Contributing ](#contributing)
-    5. [ License ](#license)
+## Table of contents
+1. [Description](#desc)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
     
-    <a name="descriptipn"></a>
-    ## Description
-    ${description}
+<a name="descriptipn"></a>
+## Description
+${description}
     
-    <a name="installation"></a>
-    ## Installation
-    ${installation}
+<a name="installation"></a>
+## Installation
+${installation}
     
-    <a name="usage"></a>
-    ## Usage
-    ${usage}
+<a name="usage"></a>
+## Usage
+${usage}
     
-    <a name="contributing"></a>
-    ## Contributing
-    ${contributing}
+<a name="contributing"></a>
+## Contributing
+${contributing}
     
-    <a name="license"></a>
-    ## License
-    ${license}
+<a name="license"></a>
+## License
+${licenseBadge}
+
+<a name="screenshot"></a>
+## License
+${screenShotlink}
     
-    <a name="contact"></a>
-    ## Contact
-    Feel free to check out my [GitHub](${github}) repository. Also feel free to send me an email at ${email} if you have any questions..`;
+<a name="contact"></a>
+## Contact
+Feel free to check out my [GitHub](${github}) repository. Also feel free to send me an email at <${email}> if you have any questions`;
     fs.writeFile('README.MD', readme , (err) => 
     err ? console.error(err) : console.log('success')
     
