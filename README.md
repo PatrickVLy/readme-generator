@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of contents
-1. [Description](#desc)
+1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Contributing](#contributing)
@@ -30,9 +30,9 @@ My code is open source so feel free to make it your own!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <a name="screenshot"></a>
-## License
-![Screenshot](https://github.com/pattymcpat/updated-portfolio/blob/main/screenshot.png)
+## Screenshot
+![Screenshot](https://github.com/pattymcpat/readme-generator/blob/main/screenshot.png)
     
 <a name="contact"></a>
 ## Contact
-Feel free to check out my [GitHub](https://github.com/pattymcpat/) repository. Also feel free to send me an email at <patrickly72@gmail.com> if you have any questions
+Feel free to check out my [GitHub](https://github.com/pattymcpat) repository. Also feel free to send me an email at <patrickly72@gmail.com> if you have any questions
