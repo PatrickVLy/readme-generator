@@ -81,7 +81,7 @@ inquirer.prompt([
 ${licenseBadge}
 
 ## Table of contents
-1. [Description](#desc)
+1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Contributing](#contributing)
