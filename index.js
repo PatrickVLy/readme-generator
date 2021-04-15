@@ -86,10 +86,12 @@ ${licenseBadge}
 3. [Usage](#usage)
 4. [Contributing](#contributing)
 5. [License](#license)
+6. [Screenshot](#screenshot)
+7. [Questions](#questions)
     
 <a name="descriptipn"></a>
 ## Description
-${description}
+${description}s
     
 <a name="installation"></a>
 ## Installation
@@ -111,7 +113,7 @@ ${licenseBadge}
 ## Screenshot
 ${screenShotlink}
     
-<a name="contact"></a>
+<a name="questions"></a>
 ## Questions
 Feel free to check out my [GitHub](${github}) repository. Also feel free to send me an email at <${email}> if you have any questions`;
     fs.writeFile('README.MD', readme , (err) => 
