@@ -108,7 +108,7 @@ ${contributing}
 ${licenseBadge}
 
 <a name="screenshot"></a>
-## License
+## Screenshot
 ${screenShotlink}
     
 <a name="contact"></a>
