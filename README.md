@@ -9,7 +9,9 @@
 4. [Contributing](#contributing)
 5. [License](#license)
 6. [Screenshot](#screenshot)
-7. [Questions](#questions)
+7. [Technology Used](#technology)
+8. [Questions](#questions)
+9. [Links](#links)
     
 <a name="descriptipn"></a>
 ## Description
@@ -73,3 +75,8 @@ My code is open source so feel free to make it your own!
 <a name="questions"></a>
 ## Questions
 Feel free to check out my [GitHub](https://github.com/pattymcpat) repository. Also feel free to send me an email at <patrickly72@gmail.com> if you have any questions
+
+<a name="links"></a>
+## Links
+1. [GitHub Repository](https://github.com/pattymcpat/readme-generator/)<br>
+2. [Video](https://youtu.be/iAoNAyz4fy8)
