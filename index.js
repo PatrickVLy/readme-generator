@@ -91,7 +91,7 @@ ${licenseBadge}
     
 <a name="descriptipn"></a>
 ## Description
-${description}s
+${description}
     
 <a name="installation"></a>
 ## Installation
