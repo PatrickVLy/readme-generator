@@ -8,10 +8,12 @@
 3. [Usage](#usage)
 4. [Contributing](#contributing)
 5. [License](#license)
+6. [Screenshot](#screenshot)
+7. [Questions](#questions)
     
 <a name="descriptipn"></a>
 ## Description
-This project will generate a README.MD file to proper README standards
+This project will generate a README.MD file to proper README standardss
     
 <a name="installation"></a>
 ## Installation
@@ -33,6 +35,6 @@ My code is open source so feel free to make it your own!
 ## Screenshot
 ![Screenshot](https://github.com/pattymcpat/readme-generator/blob/main/screenshot.png)
     
-<a name="contact"></a>
-## Contact
+<a name="questions"></a>
+## Questions
 Feel free to check out my [GitHub](https://github.com/pattymcpat) repository. Also feel free to send me an email at <patrickly72@gmail.com> if you have any questions
